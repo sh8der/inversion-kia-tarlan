@@ -146,27 +146,24 @@ body .flickity-button-icon:hover {
 
 .otpravSubmitSpan:after {
     position: absolute;
-    margin-left: 10%;
     width: 0;
     content: "";
     bottom: 18px;
-    left: 0;
+    left: 21px;
     right: 0;
     border-bottom: 1px solid white;
-    will-change: transform;
     pointer-events: none;
     transition: width 0.2s ease-out;
 }
 
 .otpravSubmitSpan:hover:after {
-    margin-left: 10%;
-    width: 80%;
-
+    width: calc(100% - 40px);
 }
 
 .otpravSubmitSpan {
     margin-top: 20px;
     position: absolute;
+    z-index: 10;
 }
 
 .otpravSubmit {
