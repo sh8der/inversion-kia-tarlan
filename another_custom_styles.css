@@ -80,10 +80,8 @@ body .flickity-button-icon:hover {
 
 .par_15:after {
     position: relative;
-    *position: absolute;
     transform: scaleX(0);
     transform-origin: center center;
-    *transform-origin: left right;
     transition: transform .3s ease-in-out;
     display: block;
     *margin-top: -20px;
@@ -97,9 +95,6 @@ body .flickity-button-icon:hover {
 .par_15.tool:after {
     transform: scaleX(1);
     transform-origin: center center;
-    *transform-origin: left right;
-    * transition: transform .3s ease-in-out;
-    *margin-top: -20px;
     content: '';
     display: block;
     width: 100%;
@@ -120,14 +115,6 @@ body .flickity-button-icon:hover {
     display: flex;
     *width: 49.7%;
     padding: 40px 0px;
-    *-webkit-box-orient: vertical;
-    *-webkit-box-direction: normal;
-    * -webkit-flex-direction: column;
-    *-ms-flex-direction: column;
-    * flex-direction: column;
-    * -webkit-box-pack: center;
-    *-webkit-justify-content: center;
-    *-ms-flex-pack: center;
     justify-content: center;
     background-color: #f2f2f2;
     color: #000;
@@ -153,17 +140,6 @@ body .flickity-button-icon:hover {
 }
 
 .content_strip_model {
-    *display: -webkit-box;
-    * display: -webkit-flex;
-    * display: -ms-flexbox;
-    display: flex;
-    *-webkit-box-pack: center;
-    * -webkit-justify-content: center;
-    *-ms-flex-pack: center;
-    * justify-content: center;
-    * -webkit-box-align: center;
-    * -webkit-align-items: center;
-    *-ms-flex-align: center;
     align-items: center;
 }
 
@@ -177,9 +153,6 @@ body .flickity-button-icon:hover {
     left: 0;
     right: 0;
     border-bottom: 1px solid white;
-    * transform: scaleX(1);
-    *transform-origin: left center;
-    *transition: transform 1.25s ease-out;
     will-change: transform;
     pointer-events: none;
     transition: width 0.2s ease-out;
@@ -200,7 +173,6 @@ body .flickity-button-icon:hover {
     text-transform: initial !important;
     padding: 10px 20px !important;
     font-size: 13px !important;
-    *position: absolute;
     margin-right: 0px !important;
     margin-bottom: 0px !important;
 }
@@ -259,8 +231,6 @@ body .flickity-button-icon:hover {
 .border-input1>span.tool:after {
     transform: scaleX(1);
     transform-origin: center center;
-    *transform-origin: left right;
-    * transition: transform .3s ease-in-out;
     margin-top: -20px;
     content: '';
     display: block;
@@ -275,7 +245,6 @@ body .flickity-button-icon:hover {
     position: absolute;
     transform: scaleX(0);
     transform-origin: center center;
-    *transform-origin: left right;
     transition: transform .3s ease-in-out;
     display: block;
     margin-top: -20px;
@@ -288,8 +257,6 @@ body .flickity-button-icon:hover {
 
 .border-input2>span.tool2:after {
     transform: scaleX(0);
-    * transform-origin: center center;
-    *transition: transform .3s ease-in-out;
     margin-top: -70px;
     content: 'Я псевдо-элемент after';
     display: block;
