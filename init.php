@@ -2,7 +2,9 @@
 
 require_once __DIR__ . '/reg-mce-plugin.php';
 require_once __DIR__ . '/add-new-styles.php';
+require_once __DIR__ . '/ux_builder/override_divider_builder_element.php';
 require_once __DIR__ . '/ux_builder/override_follow_builder_element.php';
+require_once __DIR__ . '/ux_builder/override_divider_shortcode.php';
 require_once __DIR__ . '/ux_builder/override_follow_shortcode.php';
 
 add_action('wp_enqueue_scripts', function () {
