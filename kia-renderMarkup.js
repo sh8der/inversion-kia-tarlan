@@ -17,13 +17,32 @@ var automate = {
 <h5 style="text-align: left;">{{title}}</h5>
 
 [/section_inner]`,
-  setTitles: function() { document.querySelectorAll('.news-card-content__title').forEach( title => this.titles.push(title.innerText) )},
-  setVideos: function() { document.querySelectorAll('.videos-gallery__iframe-body iframe').forEach( iframe => this.videos.push('https://www.youtube.com/watch?v=' + iframe.src.split('/embed/')[1].split('?')[0]) )},
-  getMarkup: function() {
-    var markup = '';
+  setTitles: function () {
+    this.titles = []
+    document
+      .querySelectorAll(".news-card-content__title")
+      .forEach((title) => this.titles.push(title.innerText));
+  },
+  setVideos: function () {
+    this.videos = []
+    document
+      .querySelectorAll(".videos-gallery__iframe-body iframe")
+      .forEach((iframe) =>
+        this.videos.push(
+          "https://www.youtube.com/watch?v=" +
+            iframe.src.split("/embed/")[1].split("?")[0]
+        )
+      );
+  },
+  getMarkup: function () {
+    var markup = "";
     this.titles.forEach((title, index) => {
-      markup = markup.concat(this.slideTemplate.replace('{{video}}', this.videos[index]).replace('{{title}}', title))
-    })
-    console.log(markup)
-  }
-}
+      markup = markup.concat(
+        this.slideTemplate
+          .replace("{{video}}", this.videos[index])
+          .replace("{{title}}", title)
+      );
+    });
+    console.log(markup);
+  },
+};
