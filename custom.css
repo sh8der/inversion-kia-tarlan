@@ -1,5 +1,9 @@
 @import url("another_custom_styles.css");
 
+.model-video-gallery .flickity-slider>* {
+  margin-right: 15px!important;
+}
+
 .uxb-wrapper--divider {
     width: auto!important;
     height: auto;
