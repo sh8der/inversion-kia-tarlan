@@ -1,11 +1,44 @@
 @import url("another_custom_styles.css");
 
+.full-width .ubermenu-nav,
+.container,
+.row {
+    max-width: 100% !important;
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+@media screen and (min-width: 374px) {
+
+    .full-width .ubermenu-nav,
+    .container,
+    .row {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+
+    .full-width .ubermenu-nav,
+    .container,
+    .row {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+}
+
+.row-full-width {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 .model-video-gallery .flickity-slider>* {
-  margin-right: 15px!important;
+    margin-right: 15px !important;
 }
 
 .uxb-wrapper--divider {
-    width: auto!important;
+    width: auto !important;
     height: auto;
 }
 
