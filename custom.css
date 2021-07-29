@@ -1,11 +1,97 @@
 @import url("another_custom_styles.css");
 
+footer .nav li a {
+    font-weight: lighter;
+}
+
+footer .nav li:only-child a,
+footer .nav.first-el-title li:first-child a {
+    font-weight: bold;
+    color: #fff;
+    padding-top: 0;
+    font-size: 18px;
+}
+
+footer .nav.first-el-title li:nth-child(2) a {
+    padding-top: 19px;
+}
+
+.tabbed-content.slider .nav {
+  padding-right: 80px;
+  padding-left: 50px;
+}
+
+.tabbed-content.slider .flickity-button::after {
+    filter: invert(1);
+}
+
+.tabbed-content.slider .flickity-button svg {
+    display: none;
+    visibility: hidden;
+}
+
+.tabbed-content.slider .flickity-prev-next-button.previous {
+  left: -7px;
+}
+
+.tabbed-content.slider .flickity-button {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    top: 0;
+    bottom: unset;
+}
+
+.tabbed-content.slider .nav-line {
+    list-style: none;
+}
+
+.tabbed-content.slider .nav-line li.active a span::after {
+  font-weight: bold;
+}
+
+.tabbed-content.slider .nav-line li.active a span::after,
+.tabbed-content.slider .nav-line li a:hover span::after {
+  width: 100%;
+}
+
+.tabbed-content.slider .nav-line li a span {
+  position: relative;
+}
+
+.tabbed-content.slider .nav-line li a span::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 0;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+}
+
+.tabbed-content.slider .nav-line li {
+    flex: 0 0 auto;
+    margin: 0 15px;
+    width: max-content;
+    min-height: 40px;
+    align-items: center;
+    display: flex;
+}
+
 body :not(.slider) .full-width .ubermenu-nav,
 body :not(.slider) .container,
 body :not(.slider) .row {
     max-width: 100%;
-    padding-left: 65px;
-    padding-right: 65px;
+}
+
+.nav>li {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 @media screen and (min-width: 374px) {

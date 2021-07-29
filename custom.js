@@ -32,4 +32,19 @@ document.addEventListener("DOMContentLoaded", function (e) {
       jQuery(this).find(".flickity-button-icon").remove();
     });
   })();
+
+  (function () {
+    setTimeout(() => {
+      jQuery(".tabbed-content.slider .nav-line").flickity({
+        adaptiveHeight: false,
+        cellAlign: "left",
+        pageDots: false
+      });
+      setTimeout(() => {
+       jQuery(".tabbed-content.slider .nav-line").on("ready.flickity", function () {
+         jQuery(this).find(".flickity-button-icon").remove();
+       }); 
+      }, 500);
+    }, 1000);
+  })();
 });
